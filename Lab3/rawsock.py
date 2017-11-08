@@ -24,7 +24,7 @@ def send_packet(sip, sp, dip, dp):
     dstip = dip
     srcport = int(sp)
     dstport = int(dp)
-    payload = '[TESTING]\n'
+    payload = 'Hochu sdat labu!\n'
 
     ip = make_ip(socket.IPPROTO_TCP, srcip, dstip)
     tcp = make_tcp(srcport, dstport, payload)
